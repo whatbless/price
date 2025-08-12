@@ -1,0 +1,128 @@
+:root {
+  --bg: #fafafa;
+  --card: #ffffff;
+  --muted: #8b8b8b;
+  --line: #e6e6e6;
+  --accent: #111;
+  --pill: #ececec;
+  --container-w: 360px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--accent);
+}
+
+.wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 28px 12px;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+  max-width: var(--container-w);
+  background: var(--card);
+  border-radius: 10px;
+  padding: 22px 18px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.title {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 6px 0 10px;
+  font-size: 20px;
+}
+
+.pill {
+  height: 22px;
+  width: 92%;
+  margin: 8px auto 18px;
+  background: var(--pill);
+  border-radius: 12px;
+  opacity: 0.95;
+}
+
+.table-head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 2px solid var(--line);
+  margin-bottom: 12px;
+}
+
+.table-head .left {
+  color: var(--accent);
+}
+
+.table-head .right {
+  color: var(--accent);
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.item .proc {
+  color: var(--muted);
+  line-height: 1.25;
+  font-size: 15px;
+}
+
+.price {
+  font-weight: 800;
+  font-size: 18px;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.spacer {
+  height: 8px;
+  background: linear-gradient(90deg, rgba(0,0,0,0.03), rgba(0,0,0,0.01));
+  margin: 10px 0;
+  border-radius: 6px;
+}
+
+.free-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+  padding: 14px 0 6px;
+}
+
+.free-row .proc {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.free {
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: .5px;
+}
+
+@media (max-width: 420px) {
+  .card {
+    padding: 18px 14px;
+  }
+}
