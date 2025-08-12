@@ -1,7 +1,7 @@
 :root {
   --bg: #fafafa;
   --card: #ffffff;
-  --muted: #8b8b8b;
+  --muted: #3d3d3db3;
   --line: #e6e6e6;
   --accent: #111;
   --pill: #ececec;
@@ -40,16 +40,16 @@ html, body {
   text-align: center;
   font-weight: 700;
   letter-spacing: 1px;
-  margin: 6px 0 10px;
+  margin: 12px 0 30px;
   font-size: 20px;
 }
 
 .pill {
-  height: 22px;
-  width: 92%;
-  margin: 8px auto 18px;
+  height: 20px;
+  width: 100%;
+  margin: 8px auto 30px;
   background: var(--pill);
-  border-radius: 12px;
+  border-radius: 10px;
   opacity: 0.95;
 }
 
@@ -61,8 +61,8 @@ html, body {
   padding: 6px 4px;
   text-transform: uppercase;
   font-weight: 700;
-  border-bottom: 2px solid var(--line);
-  margin-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 0px;
 }
 
 .table-head .left {
@@ -84,6 +84,7 @@ html, body {
 
 .item .proc {
   color: var(--muted);
+  font-weight: 400;
   line-height: 1.25;
   font-size: 15px;
 }
@@ -98,7 +99,7 @@ html, body {
 .spacer {
   height: 8px;
   background: linear-gradient(90deg, rgba(0,0,0,0.03), rgba(0,0,0,0.01));
-  margin: 10px 0;
+  margin: 0px 0;
   border-radius: 6px;
 }
 
@@ -117,7 +118,7 @@ html, body {
 
 .free {
   font-weight: 900;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: .5px;
 }
 
